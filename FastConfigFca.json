@@ -1,0 +1,20 @@
+{
+    "Language": "vi",
+    "MainColor": "#FF0000",
+    "BroadCast": false,
+    "EncryptFeature": true,
+    "PreKey": "điền key mua fca vào",
+    "Uptime": false,
+    "AutoRestartMinutes": 0,
+    "MainName": "[ Lazy_Project ]",
+    "HTML": {
+        "UserName": "Nguyễn Ngọc Anh Tú",
+        "MusicLink": "",
+        "HTML": true
+    },
+    "AutoUpdate": true,
+    "AutoLogin": false,
+    "ResetDataLogin": false,
+    "Login2Fa": false,
+    "AuthString": "điền 2fa vào | https://i.imgur.com/RAg3rvw.png Please remove this !, Recommend If You Use getUserInfoV2"
+}
