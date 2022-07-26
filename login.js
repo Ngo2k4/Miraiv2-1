@@ -1,11 +1,10 @@
-const fs = require("fs-extra");
-const readline = require("readline");
-const totp = require("totp-generator");
-const login = require("helyt");
-login({email: "100068910213508", password: "123456a@"}, (err, api) => {
+const fs = require("fs");
+const login = require("fca-horizon-remake");
+
+var credentials = {email: "FB_EMAIL", password: "FB_PASSWORD"}; // thông tin tai khoan facebok
+
+login(credentials, (err, api) => {
     if(err) return console.error(err);
-    const json = JSON.stringify(api.getAppState());
-    fs.writeFileSync(`./${config.APPSTATEPATH}`, json);
-    console.log("Đã ghi xong appstate!");
-    process.exit(0);
+    // đăng nhập
+    fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState())); // tạo appstate.js
 });
